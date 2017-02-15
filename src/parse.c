@@ -55,7 +55,7 @@ static int		ft_config_map(char **tab, t_mlx *mlx)
 
 	len = ft_strtablen(tab);
 	i = 0;
-	if (!(mlx->map = (t_dot**)ft_memalloc(sizeof(t_dot*) * len)))
+	if (!(mlx->map = (t_dot*)ft_memalloc(sizeof(t_dot*) * len)))
 		return (-1);
 	while (i < len)
 	{
